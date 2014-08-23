@@ -1,5 +1,6 @@
 Getting-and-Cleaning-Data-Project
 =================================
+
 ---
 title: "README.md"
 author: "Kreynolds3"
@@ -96,4 +97,3 @@ In the future, the tidy data set can be loaded back into R from the working dire
 #Load tidy UCI HAR data back into R
 UCIdata<-read.table("./UCI HAR Dataset/tidy_subjdata.txt",header=TRUE)
 ```
-Data provided by: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
