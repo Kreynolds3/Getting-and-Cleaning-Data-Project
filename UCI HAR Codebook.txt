@@ -3,7 +3,7 @@ DATA DICTIONARY - UCI HAR Dataset
 
 SUBJECT
 
-Each number 1-30 identifies the subject who performed the activity. 30 volunteers within an age bracket of 19-48 	years carried out the experiments and each was given an ID 1-30. 
+Each number 1-30 identifies the subject who performed the activity. 30 volunteers within an age bracket of 19-48 years carried out the experiments and each was given an ID 1-30. 
 
 ACTIVITY 
 
