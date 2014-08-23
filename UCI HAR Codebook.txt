@@ -1,14 +1,24 @@
-DATA DICTIONARY - UCI HAR Dataset SUBJECT	Each number 1-30 identifies the subject who performed the activity. 30 volunteers 	within an 	age bracket of 19-48 years carried out the experiments and each was 		given an ID 1-30. ACTIVITY 	Each person performed 6 activities: walking, walking upstairs, walking downstairs, 	sitting, 	standing and latin which wearing the Samsung Galaxy S II on their waist.
-VARIABLE
+DATA DICTIONARY - UCI HAR Dataset 
 
-	The features selected for this database come from the accelerometer and gyroscope 3-axial raw 		signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured 	at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass 	Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration 	signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-	XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
-	Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk 	signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional 	signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, 	tBodyGyroMag, tBodyGyroJerkMag). 
+SUBJECT
 
-	Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, 	fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to 	indicate frequency domain signals). 
+Each number 1-30 identifies the subject who performed the activity. 30 volunteers within an age bracket of 19-48 	years carried out the experiments and each was given an ID 1-30. 
 
-	These signals were used to estimate variables of the feature vector for each pattern:  
-	'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+ACTIVITY 
+
+Each person performed 6 activities: walking, walking upstairs, walking downstairs, sitting, standing and laying while wearing the Samsung Galaxy S II on their waist.
+
+VARIABLE
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, 	tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 	tBodyAcc-XYZ
 	tGravityAcc-XYZ
@@ -28,14 +38,21 @@ DATA DICTIONARY - UCI HAR Dataset SUBJECT	Each number 1-30 identifies the su
 	fBodyGyroMag
 	fBodyGyroJerkMag
 
-	The set of variables that were estimated from these signals and used to make this tidy data set 	are: 
+The set of variables that were estimated from these signals and used to make this tidy data set are: 
 
-	mean(): Mean value and std(): Standard deviation of each of the aforementioned 17 variables
+mean(): Mean value and std(): Standard deviation of each of the aforementioned 17 variables
 	
 	-The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'.
 	-The body acceleration signal obtained by subtracting the gravity from the total acceleration.	
-	-The angular velocity vector measured by the gyroscope for each window sample. The units are 		 radians/second.	 MEAN 	The mean of each unique subject, activity and variable combination was calculated and output into a 	separate row of the data frame. With 30 subjects completing 6 activities and 66 separate variable 	calculations (including mean and SD of all variables listed above), the data frame ended up with 	11,880 rows each reporting the mean of the unique combination. Notes: 
-======For more information about this dataset contact: activityrecognition@smartlab.ws
+	-The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.	 
+
+MEAN 
+
+The mean of each unique subject, activity and variable combination was calculated and output into a separate row of the data frame. With 30 subjects completing 6 activities and 66 separate variable calculations (including mean and SD of all variables listed above), the data frame ended up with 11,880 rows each reporting the mean of the unique combination. 
+
+Notes: 
+======
+For more information about this dataset contact: activityrecognition@smartlab.ws
 
 License:
 ========
